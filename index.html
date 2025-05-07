@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Car Dealership</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(2 1)" stroke="#c9a85c" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <path class="car__body" d="M47.293 2.375C52.927.792 54.017.805 54.017.805c2.613-.445 6.838-.337 9.42.237l8.381 1.863c2.59.576 6.164 2.606 7.98 4.531l6.348 6.732 6.245 1.877c3.098.508 5.609 3.431 5.609 6.507v4.206c0 .29-2.536 4.189-5.687 4.189H36.808c-2.655 0-4.34-2.1-3.688-4.67 0 0 3.71-19.944 14.173-23.902zM36.5 15.5h54.01"/>
+                <ellipse class="car__wheel--left" stroke-width="3.2" fill="#FFF" cx="83.493" cy="30.25" rx="6.922" ry="6.808"/>
+                <ellipse class="car__wheel--right" stroke-width="3.2" fill="#FFF" cx="46.511" cy="30.25" rx="6.922" ry="6.808"/>
+                <path class="car__line car__line--top" d="M22.5 16.5H2.475"/>
+                <path class="car__line car__line--middle" d="M20.5 23.5H.4755"/>
+                <path class="car__line car__line--bottom" d="M25.5 9.5h-19"/>
+            </g>
+        </svg>
+        <div class="preloader-text">LUXURY DEALERSHIP</div>
+    </div>
+
+    <div class="site-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <div class="animated-logo">
+                        <span>D</span>
+                        <span>E</span>
+                        <span>A</span>
+                        <span>L</span>
+                        <span>E</span>
+                        <span>R</span>
+                        <span>S</span>
+                        <span>H</span>
+                        <span>I</span>
+                        <span>P</span>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#featured">INVENTORY</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-btn">
+                    <button>Contact</button>
+                </div>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#featured">INVENTORY</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-duration="1000">Find your dream car</h1>
+                <div class="search-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="search-box">
+                        <div class="search-category">
+                            <label>USED CARS</label>
+                            <div class="dropdown">
+                                <span>All</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="search-category">
+                            <label>ANY MAKE</label>
+                            <div class="dropdown">
+                                <span>All</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="search-category">
+                            <label>ANY MODEL</label>
+                            <div class="dropdown">
+                                <span>All</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="search-category">
+                            <label>ALL PRICING</label>
+                            <div class="dropdown">
+                                <span>Any</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <button class="search-btn">
+                            <i class="fa-solid fa-search"></i>
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <p class="dealership-info" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    At Dealership, we've committed to providing an exceptional experience for
+                    luxury car enthusiasts, offering the finest vehicles with unparalleled service and
+                    support for your journey ahead.
+                </p>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span class="arrow"></span>
+                    <span class="arrow"></span>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Vehicles Section -->
+        <section id="featured" class="featured">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Featured Vehicles</h2>
+                <div class="cars-grid">
+                    <div class="car-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="car-image">
+                            <img src="https://cdn.pixabay.com/photo/2016/12/03/18/57/amg-1880381_1280.jpg" alt="2023 Mercedes-Benz S-Class">
+                            <div class="car-tag">NEW ARRIVAL</div>
+                        </div>
+                        <div class="car-details">
+                            <h3>2023 Mercedes-Benz S-Class</h3>
+                            <div class="car-specs">
+                                <span><i class="fa-solid fa-gauge"></i> 12,000 mi</span>
+                                <span><i class="fa-solid fa-gas-pump"></i> Gasoline</span>
+                                <span><i class="fa-solid fa-gears"></i> Automatic</span>
+                            </div>
+                            <div class="car-price">
+                                <span class="price">$89,000</span>
+                                <button class="details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="car-image">
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Sports Car">
+                            <div class="car-tag">HOT DEAL</div>
+                        </div>
+                        <div class="car-details">
+                            <h3>2022 Porsche 911 Carrera</h3>
+                            <div class="car-specs">
+                                <span><i class="fa-solid fa-gauge"></i> 8,500 mi</span>
+                                <span><i class="fa-solid fa-gas-pump"></i> Gasoline</span>
+                                <span><i class="fa-solid fa-gears"></i> Automatic</span>
+                            </div>
+                            <div class="car-price">
+                                <span class="price">$112,000</span>
+                                <button class="details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="car-image">
+                            <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Luxury SUV">
+                        </div>
+                        <div class="car-details">
+                            <h3>2023 Range Rover Sport</h3>
+                            <div class="car-specs">
+                                <span><i class="fa-solid fa-gauge"></i> 15,200 mi</span>
+                                <span><i class="fa-solid fa-gas-pump"></i> Hybrid</span>
+                                <span><i class="fa-solid fa-gears"></i> Automatic</span>
+                            </div>
+                            <div class="car-price">
+                                <span class="price">$95,500</span>
+                                <button class="details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all" data-aos="fade-up" data-aos-delay="400">
+                    <button>View All Inventory</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3>New & Pre-owned Sales</h3>
+                        <p>Browse our extensive inventory of luxury vehicles, meticulously inspected to ensure quality and performance.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <h3>Premium Maintenance</h3>
+                        <p>Our certified technicians provide complete maintenance services using genuine parts to keep your vehicle performing at its best.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Financing Options</h3>
+                        <p>Competitive financing solutions tailored to your needs with transparent terms and flexible payment plans.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Extended Warranty</h3>
+                        <p>Comprehensive protection plans that provide peace of mind long after your purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+                <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonials-container">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                                <p>"The team at Dealership made finding my dream car an absolute pleasure. Their knowledge and attention to detail exceeded my expectations."</p>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Thompson">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>Michael Thompson</h4>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                                <p>"I was impressed by the selection of luxury vehicles and the no-pressure sales approach. The financing process was seamless, and I drove away in my new car the same day."</p>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>Sarah Johnson</h4>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                                <p>"The maintenance service is exceptional. They always keep my car running like new, and their attention to detail is unmatched. I wouldn't trust my vehicle with anyone else."</p>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="https://randomuser.me/api/portraits/men/66.jpg" alt="Robert Chen">
+                                    </div>
+                                    <div class="client-details">
+                                        <h4>Robert Chen</h4>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial navigation dots -->
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <h2 class="section-title">About Dealership</h2>
+                        <p>Founded in 2005, Dealership has established itself as the premier destination for luxury automobiles. Our commitment to excellence drives everything we do, from our careful selection of vehicles to our personalized customer service approach.</p>
+                        <p>With a team of passionate automotive experts, we provide an unmatched buying experience, ensuring that each client finds the perfect vehicle to match their lifestyle and preferences.</p>
+                        <div class="about-stats">
+                            <div class="stat" data-aos="zoom-in" data-aos-delay="100">
+                                <span class="stat-number count" data-count="15">0</span>
+                                <span class="stat-text">Years Experience</span>
+                            </div>
+                            <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+                                <span class="stat-number count" data-count="1200">0</span>
+                                <span class="stat-text">Cars Sold</span>
+                            </div>
+                            <div class="stat" data-aos="zoom-in" data-aos-delay="300">
+                                <span class="stat-number count" data-count="98">0</span>
+                                <span class="stat-text">Satisfied Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image" data-aos="fade-left">
+                        <img src="imge/-1x-1.webp" alt="Dealership Showroom">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h2 class="section-title">Contact Us</h2>
+                        <p>We're here to assist you with any questions you may have about our vehicles or services.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>123 Luxury Lane, Beverly Hills, CA 90210</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>(800) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>info@dealership.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Mon-Sat: 9AM-8PM, Sun: 10AM-6PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" class="form-control">
+                                <span class="form-focus-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" class="form-control">
+                                <span class="form-focus-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Your Phone" class="form-control">
+                                <span class="form-focus-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" class="form-control"></textarea>
+                                <span class="form-focus-border"></span>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <div class="animated-logo">
+                                <span>D</span>
+                                <span>E</span>
+                                <span>A</span>
+                                <span>L</span>
+                                <span>E</span>
+                                <span>R</span>
+                                <span>S</span>
+                                <span>H</span>
+                                <span>I</span>
+                                <span>P</span>
+                            </div>
+                        </div>
+                        <p>Luxury automotive experience since 2005, providing exceptional vehicles and unparalleled service.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#featured">Inventory</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="#">New Vehicles</a></li>
+                            <li><a href="#">Pre-owned Vehicles</a></li>
+                            <li><a href="#">Financing</a></li>
+                            <li><a href="#">Maintenance</a></li>
+                            <li><a href="#">Parts & Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to receive updates on new arrivals and special offers.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email" class="form-control">
+                            <span class="form-focus-border"></span>
+                            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Dealership. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
